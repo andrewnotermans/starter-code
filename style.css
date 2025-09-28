@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+:root{
+    --cyan-600: #4D96A9;
+    --cyan-300: #8FE3F9;
+    --purple-600: #855FB1;
+    --purple-300: #D9B8FF;
+    --slate-900: #28283D;
+    --slate-600: #87879D;
+    --slate-30: #D1D1DF;
+    --white: #FAFAFA;
+
+    --text-preset-font-family: "Red Hat Display", sans-serif;
+    --text-preset-line-height: 110%;
+    --desktop-text-preset-1-font-size: 64px;  
+    --desktop-text-preset-1-line-height: 1.1;  
+    --desktop-text-preset-2-font-size: 2.5rem;
+    --desktop-text-preset-2-line-height: 1.1;
+    --desktop-text-preset-3-font-size: 1rem;
+    --desktop-text-preset-3-line-height: 1.1;
+    --desktop-text-preset-4-font-size: 1.125rem;
+    --desktop-text-preset-4-line-height: 1.5;
+    --desktop-text-preset-5-font-size: 1rem;
+    --desktop-text-preset-5-line-height: 1.5;
+
+    --tablet-text-preset-1-font-size: 3rem;
+    --tablet-text-preset-1-line-height: 1.1;
+    --tablet-text-preset-2-font-size: 2.25rem;
+    --tablet-text-preset-2-line-height: 1.1;
+    --tablet-text-preset-3-font-size: 0.875rem;
+    --tablet-text-preset-3-line-height: 1.1;
+    --tablet-text-preset-4-font-size: 1rem;
+    --tablet-text-preset-4-line-height: 1.5;
+
+    --mobile-text-preset-1-font-size: 2.5rem;
+    --mobile-text-preset-1-line-height: 1.1;
+    --mobile-text-preset-2-font-size: 2rem;
+    --mobile-text-preset-2-line-height: 1.1;
+    --mobile-text-preset-3-font-size: 0.75rem;
+    --mobile-text-preset-3-line-height: 1.1;
+    
+   
+    
+
+
+body {
+    font-family: var(--text-preset-font-family);
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.header-logo{
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    height: 76px;
+    margin-bottom: 4rem;
+    align-items: center;
+}
+
+
+.header-logo img {
+    position: absolute;
+    bottom: 0;
+    width: 118px;
+    height: auto;
+}
+
+.header-hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    flex-wrap: nowrap;
+    gap: 17px;
+    margin-bottom: 3rem;
+    
+}
+
+.header-hero img {
+    width: 100%;
+}
+
+.header-intro {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.header-intro button {
+    font-size: var(--desktop-text-preset-5-font-size);
+    text-align: center;
+    padding: 1rem 2.5rem;
+    border-radius: 29px;
+    color: var(--white);
+    border: none;
+    
+}
+
+.header-intro button:nth-of-type(1) {
+    background: var(--cyan-600);
+    margin-bottom: 1rem;
+}
+
+.header-intro button:nth-of-type(2) {
+    background: var(--purple-600);
+}
+
+@media screen and (max-width: 425px) {
+    .header-intro h1 {
+    font-size: var(--mobile-text-preset-1-font-size);
+    line-height: var(--mobile-text-preset-1-line-height);
+    }
+
+    .header-intro p {
+        margin: 1.5rem auto;
+    }
+}
+
+
+
+
+/* Main */
+
+
